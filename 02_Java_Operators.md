@@ -35,3 +35,19 @@ System.out.println(result);
 | `*`      | **Multiplication** – multiplies two values.                                                          | `int price = 100;`<br>`int quantity = 3;`<br>`int result = price * quantity;`<br>`System.out.println(result);`<br>**Output:** `300` | Calculate **subtotal** = product price × quantity.                                             |
 | `/`      | **Division** – divides the left value by the right value. With `int`, the decimal part is discarded. | `int a = 10;`<br>`int b = 3;`<br>`int result = a / b;`<br>`System.out.println(result);`<br>**Output:** `3`                          | Verify **average**, installment amount, pagination calculations, percentage calculations, etc. |
 | `%`      | **Modulus** – returns the **remainder** after division.                                              | `int a = 10;`<br>`int b = 3;`<br>`int result = a % b;`<br>`System.out.println(result);`<br>**Output:** `1`                          | Check **even/odd values**, remaining items, batch processing, pagination, etc.                 |
+
+## Arithamatic Operator Pricidence:
+
+```
+( ) → * / % → + -
+```
+
+
+
+
+
+
+
+
+
+

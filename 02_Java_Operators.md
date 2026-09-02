@@ -93,5 +93,34 @@ Relational operators are used to compare two values. The result is always a bool
 | `!`      | **Logical NOT** – reverses a boolean value: `true → false`, `false → true`.                                 | `boolean loggedIn = false;`<br>`System.out.println(!loggedIn);`<br>**Output:** `true`               | Verify negative conditions, such as **user is not logged in**, button is not disabled, etc.  |
 | `~`      | **Bitwise NOT** – reverses every bit of an integer value.                                                   | `int a = 5;`<br>`int result = ~a;`<br>`System.out.println(result);`<br>**Output:** `-6`             | Rare in normal UI automation; mainly relevant when testing **bit-level/system-level logic**. |
 
+## Ternary Operator:
+The **ternary operator** is a short way of writing a simple `if-else` condition.
 
+### Basic syntax
 
+```text
+condition ? value1 : value2
+```
+
+Meaning:
+
+```text
+condition
+   ↓
+ true  → value1
+ false → value2
+```
+
+| Operator | Explanation / Rule                                                                                        | Simple Java Program                                                                                                         | Use Case in Testing                                                                     |
+| -------- | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| `?:`     | Checks a condition. If the condition is **true**, it returns `value1`; if **false**, it returns `value2`. | `int age = 20;`<br>`String result = age >= 18 ? "Adult" : "Minor";`<br>`System.out.println(result);`<br>**Output:** `Adult` | Quickly determine **PASS/FAIL**, valid/invalid status, eligible/ineligible status, etc. |
+
+### Simple example
+
+```java
+int marks = 75;
+
+String result = marks >= 50 ? "PASS" : "FAIL";
+
+System.out.println(result);
+```

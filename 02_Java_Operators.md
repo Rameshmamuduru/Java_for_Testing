@@ -59,6 +59,20 @@ variable = value;
 | `%=`     | **Modulus and assign** – calculates the remainder and stores it back. `a %= b` → `a = a % b`   | `int items = 17;`<br>`items %= 5;`<br>`System.out.println(items);`<br>**Output:** `2`        | Validate **remaining items**, batch processing, pagination, or even/odd conditions. |
 
 
+## Relational operators:
+
+Relational operators are used to compare two values. The result is always a boolean: true or false
+
+| Operator | Explanation / Rule                                                             | Simple Java Program                                                                   | Use Case in Testing                                                              |
+| -------- | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
+| `==`     | Checks whether two values are **equal**.                                       | `int a = 10;`<br>`int b = 10;`<br>`System.out.println(a == b);`<br>**Output:** `true` | Compare **actual vs expected** values.                                           |
+| `!=`     | Checks whether two values are **not equal**.                                   | `int a = 10;`<br>`int b = 20;`<br>`System.out.println(a != b);`<br>**Output:** `true` | Verify that an incorrect value is **not accepted** or two values differ.         |
+| `>`      | Checks whether the left value is **greater than** the right value.             | `int price = 500;`<br>`System.out.println(price > 400);`<br>**Output:** `true`        | Verify a value is **above a limit**, such as minimum order amount.               |
+| `<`      | Checks whether the left value is **less than** the right value.                | `int age = 17;`<br>`System.out.println(age < 18);`<br>**Output:** `true`              | Validate **maximum limits**, such as age or quantity restrictions.               |
+| `>=`     | Checks whether the left value is **greater than or equal to** the right value. | `int amount = 1000;`<br>`System.out.println(amount >= 1000);`<br>**Output:** `true`   | Verify a value meets a **minimum requirement**, such as minimum purchase amount. |
+| `<=`     | Checks whether the left value is **less than or equal to** the right value.    | `int quantity = 5;`<br>`System.out.println(quantity <= 10);`<br>**Output:** `true`    | Verify a value does not exceed a **maximum allowed limit**.                      |
+
+
 
 
 

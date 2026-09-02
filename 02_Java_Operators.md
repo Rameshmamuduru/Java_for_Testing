@@ -42,6 +42,21 @@ System.out.println(result);
 ( ) → * / % → + -
 ```
 
+## Assignment operators:
+Assignment operators are used to assign a value to a variable or update the existing value of a variable.
+```JAVA
+variable = value;
+```
+### Mind Map Table:
+
+| Operator | Explanation / Rule                                                                             | Simple Java Program                                                                          | Use Case in Testing                                                                 |
+| -------- | ---------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| `=`      | **Simple assignment** – assigns the value on the right to the variable on the left.            | `int price = 500;`<br>`System.out.println(price);`<br>**Output:** `500`                      | Store **test data**, such as username, price, quantity, expected result, etc.       |
+| `+=`     | **Add and assign** – adds a value to the existing variable. `a += b` → `a = a + b`             | `int total = 500;`<br>`total += 100;`<br>`System.out.println(total);`<br>**Output:** `600`   | Add **shipping charges, taxes, additional fees**, etc. to an expected total.        |
+| `-=`     | **Subtract and assign** – subtracts a value from the existing variable. `a -= b` → `a = a - b` | `int total = 500;`<br>`total -= 100;`<br>`System.out.println(total);`<br>**Output:** `400`   | Apply **discounts**, reduce stock, or subtract refunds/charges.                     |
+| `*=`     | **Multiply and assign** – multiplies the existing variable by a value. `a *= b` → `a = a * b`  | `int price = 500;`<br>`price *= 3;`<br>`System.out.println(price);`<br>**Output:** `1500`    | Calculate **price × quantity** when validating an e-commerce order.                 |
+| `/=`     | **Divide and assign** – divides the existing variable by a value. `a /= b` → `a = a / b`       | `int amount = 1000;`<br>`amount /= 4;`<br>`System.out.println(amount);`<br>**Output:** `250` | Validate **average values, installment amounts, or equally divided quantities**.    |
+| `%=`     | **Modulus and assign** – calculates the remainder and stores it back. `a %= b` → `a = a % b`   | `int items = 17;`<br>`items %= 5;`<br>`System.out.println(items);`<br>**Output:** `2`        | Validate **remaining items**, batch processing, pagination, or even/odd conditions. |
 
 
 

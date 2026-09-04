@@ -13,7 +13,7 @@ a control statement is a statement that **controls the flow (order)** in which y
 | **2. Loop / Iteration**     | Repeat code                    | `for`, `while`, `do-while`           |
 | **3. Jump / Branching**     | Change or exit the normal flow | `break`, `continue`, `return`        |
 
-### Conditional Statements/Decision/Selection:
+### 1. Conditional Statements/Decision/Selection:
 Decision statements allow a Java program to make a **decision based on a condition.**
 ```
 User enters username and password

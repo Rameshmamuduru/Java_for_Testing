@@ -3,9 +3,9 @@
 a control statement is a statement that **controls the flow (order)** in which your program executes.
 
 **Types**
-1. Conditional Statements/Decision / Selection
+**1. Conditional Statements/Decision / Selection
 2. looping/iterative statements
-3. jumping statements
+3. jumping statements**
 
 | Type                        | Purpose                        | Statements                           |
 | --------------------------- | ------------------------------ | ------------------------------------ |

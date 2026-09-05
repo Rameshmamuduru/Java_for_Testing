@@ -241,7 +241,29 @@ for (int i = 1; i <= 5; i++) {
 ```
 
 
+## Practice:
 
+**Beginner**
+
+- Print numbers 1–10.
+- Print numbers 10–1.
+- Print even numbers 1–20.
+- Print odd numbers 1–20.
+- Print multiples of 5 up to 50.
+  
+**Intermediate**
+
+- Calculate the sum of numbers 1–10.
+- Calculate the multiplication table of a number.
+- Count how many numbers from 1–100 are divisible by 5.
+- Find the largest of several numbers using a loop.
+- Reverse a number.
+- Automation-oriented
+- Loop through 5 usernames and print each.
+- Loop through 5 products and print their names.
+- Loop through product prices and calculate the total.
+- Search a list of products and use break when the desired product is found.
+- Loop through test data and identify which test cases passed/failed.
 
 
 

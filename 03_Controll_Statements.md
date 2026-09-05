@@ -16,6 +16,9 @@ a control statement is a statement that **controls the flow (order)** in which y
 | **2. Loop / Iteration**     | Repeat code                    | `for`, `while`, `do-while`           |
 | **3. Jump / Branching**     | Change or exit the normal flow | `break`, `continue`, `return`        |
 
+============================================================================================
+
+
 ### 1. Conditional Statements/Decision/Selection:
 Decision statements allow a Java program to make a **decision based on a condition.**
 ```
@@ -137,6 +140,109 @@ switch (day) {
         System.out.println("Invalid day");
 }
 ```
+============================================================================================
+
+
+## 2. Looping statements:
+A loop allows Java to execute the **same block of code repeatedly as long as a condition is satisfied.**
+
+### Types of loops in Java:
+
+| Loop         | Best used when                                           |
+| ------------ | -------------------------------------------------------- |
+| **for**      | You know how many times you want to repeat               |
+| **while**    | You repeat while a condition remains true                |
+| **do-while** | You want the code to execute at least once               |
+| **for-each** | You want to process every element in an array/collection |
+
+### for loop:
+```
+for (initialization; condition; update) {
+    // code
+}
+
+Example:
+
+for (int i = 1; i <= 5; i++) {
+    System.out.println(i);
+}
+```
+
+### while loop:
+```
+while (condition) {
+    // code
+}
+```
+```
+int i = 1;
+
+while (i <= 5) {
+    System.out.println(i);
+    i++;
+}
+```
+
+### do-while loop:
+
+```
+do {
+    // code
+} while (condition);
+```
+
+```
+int i = 1;
+
+do {
+    System.out.println(i);
+    i++;
+} while (i <= 5);
+```
+
+### for-each loop:
+This is extremely useful when working with arrays and collections.
+```
+String[] browsers = {"Chrome", "Edge", "Firefox"};
+```
+
+```
+for (String browser : browsers) {
+    System.out.println(browser);
+}
+```
+============================================================================================
+
+## 3. Jumping Statements:
+
+### break: 
+Immediately stop the loop.
+```
+for (int i = 1; i <= 10; i++) {
+
+    if (i == 5) {
+        break;
+    }
+
+    System.out.println(i);
+}
+```
+### continue:
+Skip the current iteration and move to the next iteration.
+```
+for (int i = 1; i <= 5; i++) {
+
+    if (i == 3) {
+        continue;
+    }
+
+    System.out.println(i);
+}
+```
+
+
+
+
 
 
 

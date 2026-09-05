@@ -258,7 +258,9 @@ for (int i = 1; i <= 5; i++) {
 - Count how many numbers from 1–100 are divisible by 5.
 - Find the largest of several numbers using a loop.
 - Reverse a number.
-- Automation-oriented
+  
+**Automation-oriented**
+  
 - Loop through 5 usernames and print each.
 - Loop through 5 products and print their names.
 - Loop through product prices and calculate the total.

@@ -239,7 +239,13 @@ for (int i = 1; i <= 5; i++) {
     System.out.println(i);
 }
 ```
+| Statement  | What it does                | Testing use                                           |
+| ---------- | --------------------------- | ----------------------------------------------------- |
+| `break`    | Stops the **entire loop**   | Stop searching once required element/data is found    |
+| `continue` | Skips **current iteration** | Skip a disabled/invalid test case and continue        |
+| `return`   | Exits the **method**        | Stop test execution when prerequisite/data is missing |
 
+===========================================================================
 
 ## Practice:
 

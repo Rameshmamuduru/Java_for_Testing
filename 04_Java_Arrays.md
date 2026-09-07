@@ -43,7 +43,7 @@ A one-dimensional array (1D array) in Java is a collection of multiple values of
 
 **II. Java Built in methods for Arrys**
 
-- Must Know:
+- **Must Know:**
   
 | **Method**              | **Use**                          | **Example**                         | **Result**             |
 | ----------------------- | -------------------------------- | ----------------------------------- | ---------------------- |
@@ -57,7 +57,7 @@ A one-dimensional array (1D array) in Java is a collection of multiple values of
 | `Arrays.asList()`       | Convert object array to List     | `Arrays.asList(names)`              | List representation    |
 | `Arrays.mismatch()`     | Find first different position    | `Arrays.mismatch(a, b)`             | Index of difference    |
 
-- Learn Later
+- **Learn Later**
 
 | **Method**              | **Use**                              | **Example**                           | **Result**                |
 | ----------------------- | ------------------------------------ | ------------------------------------- | ------------------------- |
@@ -69,7 +69,7 @@ A one-dimensional array (1D array) in Java is a collection of multiple values of
 | `Arrays.stream()`       | Create Stream from array             | `Arrays.stream(numbers)`              | Stream                    |
 | `Arrays.setAll()`       | Generate values using a function     | `Arrays.setAll(numbers, i -> i * 10)` | Generated values          |
 
-- Advanced:
+- **Advanced:**
 
 | **Method**                 | **Use**                            | **Example**                           | **Result**                |
 | -------------------------- | ---------------------------------- | ------------------------------------- | ------------------------- |

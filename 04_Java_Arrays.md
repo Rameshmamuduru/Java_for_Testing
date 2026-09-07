@@ -19,10 +19,10 @@ int a[] = new int[5]
 ```
 ### Types of arrays:
 
-**1.Single Dymentional arrays**
+**1. Single Dymentional arrays**
 A one-dimensional array (1D array) in Java is a collection of multiple values of the same data type stored under one variable name, arranged in a single row/list.
 
-**Basic 1D Array Operations**
+**I. Basic 1D Array Operations**
 
 | Operation        | What it means                    | Java example                        |
 | ---------------- | -------------------------------- | ----------------------------------- |
@@ -41,7 +41,7 @@ A one-dimensional array (1D array) in Java is a collection of multiple values of
 | **Reverse**      | Reverse the order                | Loop / swapping                     |
 | **Copy**         | Copy an array                    | `Arrays.copyOf()`                   |
 
-**Java Built in methods for Arrys**
+**II. Java Built in methods for Arrys**
 
 | Method                  | Use                              | Example                             | Result                 |
 | ----------------------- | -------------------------------- | ----------------------------------- | ---------------------- |

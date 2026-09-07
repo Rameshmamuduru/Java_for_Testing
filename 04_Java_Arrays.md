@@ -19,7 +19,7 @@ int a[] = new int[5]
 ```
 ### Types of arrays:
 
-**1. Single Dymentional arrays**
+**1. One Dymentional arrays**
 A one-dimensional array (1D array) in Java is a collection of multiple values of the same data type stored under one variable name, arranged in a single row/list.
 
 **I. Basic 1D Array Operations**
@@ -77,6 +77,67 @@ A one-dimensional array (1D array) in Java is a collection of multiple values of
 | `Arrays.parallelSetAll()`  | Generate values in parallel        | `Arrays.parallelSetAll(numbers, ...)` | Generated values          |
 | `Arrays.parallelPrefix()`  | Calculate cumulative/prefix values | `Arrays.parallelPrefix(numbers, ...)` | Prefix results            |
 | `Arrays.compareUnsigned()` | Compare arrays as unsigned values  | `Arrays.compareUnsigned(a, b)`        | Negative / `0` / positive |
+
+============================================================================================
+
+**2. Two Dymentional arrays**
+
+A two-dimensional array is an array where data is organized in rows and columns.
+```
+             Column
+             0    1    2
+           +----+----+----+
+Row 0      | 10 | 20 | 30 |
+           +----+----+----+
+Row 1      | 40 | 50 | 60 |
+           +----+----+----+
+Row 2      | 70 | 80 | 90 |
+           +----+----+----+
+```
+
+=================================================================================================
+
+**How to Expect Input from User/keyboard**
+``` JAVA
+
+import java.util.Scanner;
+
+public class UserInput {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter a number: ");
+
+        int number = sc.nextInt();
+
+        System.out.println("You entered: " + number);
+    }
+}
+```
+
+| Java Data Type | Scanner Method           | Example Input | Variable Declaration            | Stored Value    |
+| -------------- | ------------------------ | ------------- | ------------------------------- | --------------- |
+| `byte`         | `nextByte()`             | `100`         | `byte x = sc.nextByte();`       | `100`           |
+| `short`        | `nextShort()`            | `20000`       | `short x = sc.nextShort();`     | `20000`         |
+| `int` ⭐        | `nextInt()`              | `500`         | `int x = sc.nextInt();`         | `500`           |
+| `long`         | `nextLong()`             | `500000L`     | `long x = sc.nextLong();`       | `500000`        |
+| `float`        | `nextFloat()`            | `25.5`        | `float x = sc.nextFloat();`     | `25.5`          |
+| `double` ⭐     | `nextDouble()`           | `99.99`       | `double x = sc.nextDouble();`   | `99.99`         |
+| `boolean`      | `nextBoolean()`          | `true`        | `boolean x = sc.nextBoolean();` | `true`          |
+| `char`         | No direct `nextChar()` ❌ | `A`           | `char x = sc.next().charAt(0);` | `A`             |
+| `String`       | `next()`                 | `Ramesh`      | `String x = sc.next();`         | `"Ramesh"`      |
+| `String`       | `nextLine()` ⭐           | `Hello World` | `String x = sc.nextLine();`     | `"Hello World"` |
+
+
+
+
+
+
+
+
+
+
 
 
 

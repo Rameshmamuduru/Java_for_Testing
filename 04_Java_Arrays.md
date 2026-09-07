@@ -43,7 +43,9 @@ A one-dimensional array (1D array) in Java is a collection of multiple values of
 
 **II. Java Built in methods for Arrys**
 
-| Method                  | Use                              | Example                             | Result                 |
+- Must Know:
+  
+| **Method**              | **Use**                          | **Example**                         | **Result**             |
 | ----------------------- | -------------------------------- | ----------------------------------- | ---------------------- |
 | `Arrays.toString()`     | Convert array to readable String | `Arrays.toString(numbers)`          | `[50, 20, 40, 10, 30]` |
 | `Arrays.sort()`         | Sort array ascending             | `Arrays.sort(numbers)`              | `[10, 20, 30, 40, 50]` |
@@ -52,9 +54,29 @@ A one-dimensional array (1D array) in Java is a collection of multiple values of
 | `Arrays.copyOf()`       | Copy an array                    | `Arrays.copyOf(numbers, 3)`         | First 3 elements       |
 | `Arrays.copyOfRange()`  | Copy a specific range            | `Arrays.copyOfRange(numbers, 1, 4)` | Elements index 1–3     |
 | `Arrays.fill()`         | Fill array with same value       | `Arrays.fill(numbers, 0)`           | `[0,0,0,0,0]`          |
-| `Arrays.asList()`       | Convert array to List*           | `Arrays.asList(names)`              | List representation    |
-| `Arrays.mismatch()`     | Find first different position    | `Arrays.mismatch(a,b)`              | Index of difference    |
+| `Arrays.asList()`       | Convert object array to List     | `Arrays.asList(names)`              | List representation    |
+| `Arrays.mismatch()`     | Find first different position    | `Arrays.mismatch(a, b)`             | Index of difference    |
 
+- Learn Later
+
+| **Method**              | **Use**                              | **Example**                           | **Result**                |
+| ----------------------- | ------------------------------------ | ------------------------------------- | ------------------------- |
+| `Arrays.deepToString()` | Print multidimensional array         | `Arrays.deepToString(matrix)`         | Readable nested array     |
+| `Arrays.deepEquals()`   | Compare multidimensional arrays      | `Arrays.deepEquals(a, b)`             | `true` / `false`          |
+| `Arrays.compare()`      | Compare two arrays                   | `Arrays.compare(a, b)`                | Negative / `0` / positive |
+| `Arrays.hashCode()`     | Generate array hash code             | `Arrays.hashCode(numbers)`            | Integer hash              |
+| `Arrays.deepHashCode()` | Generate hash code for nested arrays | `Arrays.deepHashCode(matrix)`         | Integer hash              |
+| `Arrays.stream()`       | Create Stream from array             | `Arrays.stream(numbers)`              | Stream                    |
+| `Arrays.setAll()`       | Generate values using a function     | `Arrays.setAll(numbers, i -> i * 10)` | Generated values          |
+
+- Advanced:
+
+| **Method**                 | **Use**                            | **Example**                           | **Result**                |
+| -------------------------- | ---------------------------------- | ------------------------------------- | ------------------------- |
+| `Arrays.parallelSort()`    | Sort using parallel processing     | `Arrays.parallelSort(numbers)`        | Sorted array              |
+| `Arrays.parallelSetAll()`  | Generate values in parallel        | `Arrays.parallelSetAll(numbers, ...)` | Generated values          |
+| `Arrays.parallelPrefix()`  | Calculate cumulative/prefix values | `Arrays.parallelPrefix(numbers, ...)` | Prefix results            |
+| `Arrays.compareUnsigned()` | Compare arrays as unsigned values  | `Arrays.compareUnsigned(a, b)`        | Negative / `0` / positive |
 
 
 

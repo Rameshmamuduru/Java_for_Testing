@@ -13,3 +13,7 @@ String browser4 = "Safari";
 ```
 String[] browsers = {"Chrome", "Edge", "Firefox", "Safari"};
 ```
+**Intialization**
+```
+int a[] = new int[5]
+```

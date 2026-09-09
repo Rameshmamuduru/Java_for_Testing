@@ -48,7 +48,62 @@ A method is a named block of code defined inside a class that performs a specifi
    has its own data    performs actions
 ```
 
+### Example:
 
+**1. Creating a Main class**
+```JAVA
+class BankAccount {
 
+    String accountHolder;
+    double balance;
 
+    void deposit(double amount) {
+        balance = balance + amount;
+    }
 
+    void displayBalance() {
+        System.out.println("Balance: " + balance);
+    }
+}
+```
+
+- It defines:
+  - **Variables** → accountHolder, balance
+  - **Methods** → deposit(), displayBalance()
+
+**2. Another class uses Bank Account:**
+
+``` JAVA
+class Main {
+
+    public static void main(String[] args) {
+
+        BankAccount account1 = new BankAccount();
+
+        account1.accountHolder = "Ramesh";
+        account1.balance = 10000;
+
+        account1.deposit(5000);
+
+        account1.displayBalance();
+    }
+}
+```
+**MIND MAP**
+
+```
+BankAccount class
+       │
+       │ Defines
+       ↓
+  What an account
+  has and can do
+       
+       ↓
+
+Main class
+       │
+       │ Creates/uses
+       ↓
+  BankAccount object
+```

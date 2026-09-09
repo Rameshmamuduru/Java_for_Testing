@@ -143,7 +143,7 @@ Scanner sc = new Scanner(System.in);
 ```
 
 - Read different types of input
-```
+```JAVA
 import java.util.Scanner;
 
 public class UserInput {

@@ -16,12 +16,15 @@ OOPs (Object-Oriented Programming System), usually called OOP (Object-Oriented P
 ### Class, Object and Methods:
 
 **Class**
+
 A class is a **user-defined reference data** type that acts as a **blueprint for creating objects**. It contains variables (data/state) and methods (behavior) that define the characteristics and functionality of its objects.
 
 **Object**
+
 An object is an instance of a class that has its own state and can access the behavior defined by that class.
 
 **Methods**
+
 A method is a named block of code defined inside a class that performs a specific operation or behavior. It can accept input through parameters and may return a value.
 
 

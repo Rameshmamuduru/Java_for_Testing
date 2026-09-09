@@ -5,7 +5,7 @@ String name = "Ramesh";
 String name = new String("jhon");
 ```
 **Methods**
-``` TABLE
+
 | Method                  | Purpose                             | Example                                     |
 | ----------------------- | ----------------------------------- | ------------------------------------------- |
 | `length()`              | Returns number of characters        | `"Java".length()` → `4`                     |
@@ -35,4 +35,4 @@ String name = new String("jhon");
 | `toCharArray()`         | Converts String → char array        | `"Java".toCharArray()`                      |
 | `valueOf()`             | Converts value → String             | `String.valueOf(100)`                       |
 
-```
+

@@ -27,8 +27,26 @@ An object is an instance of a class that has its own state and can access the be
 
 A method is a named block of code defined inside a class that performs a specific operation or behavior. It can accept input through parameters and may return a value.
 
+**Mind Map**
 
-
+```
+                 CLASS
+                  │
+        ┌─────────┴─────────┐
+        │                   │
+     VARIABLES            METHODS
+     (State)             (Behavior)
+        │                   │
+        └─────────┬─────────┘
+                  │
+             creates
+                  ↓
+                OBJECT
+                  │
+        ┌─────────┴─────────┐
+        ↓                   ↓
+   has its own data    performs actions
+```
 
 
 

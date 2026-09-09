@@ -1,6 +1,4 @@
-Yes. Since you're learning **Java for automation testing**, don't try to memorize every Java class—there are thousands across the Java API. Instead, learn the important classes package-by-package.
-
-## Important predefined Java classes
+## predefined Java classes
 
 ### 1. `java.lang` — Core Java classes
 

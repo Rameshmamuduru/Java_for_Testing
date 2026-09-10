@@ -23,13 +23,16 @@
 
 **1. Must Master**
 
-1. **`Arrays.toString()`** — convert array to readable output
-2. **`Arrays.sort()`** — sort array
-3. **`Arrays.equals()`** — compare two arrays
-4. **`Arrays.copyOf()`** — copy an array
-5. **`Arrays.copyOfRange()`** — copy a specific range
-6. **`Arrays.fill()`** — fill array with a value
-7. **`Arrays.binarySearch()`** — search an element in a sorted array
+| Method                  | Description                                                         | Common Testing Use Case                                      | General Structure                     |
+| ----------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------ | ------------------------------------- |
+| `Arrays.toString()`     | Converts a 1D array into a readable `String`                        | Print/log **expected and actual** array values for debugging | `Arrays.toString(array)`              |
+| `Arrays.sort()`         | Sorts array elements in **ascending order**                         | Sort test data before comparison or verification             | `Arrays.sort(array)`                  |
+| `Arrays.equals()`       | Compares two arrays element-by-element; **order matters**           | Compare **expected vs actual** array results                 | `Arrays.equals(array1, array2)`       |
+| `Arrays.copyOf()`       | Creates a **new array** by copying an existing array                | Create a separate copy of test data or change array size     | `Arrays.copyOf(array, newLength)`     |
+| `Arrays.copyOfRange()`  | Creates a new array containing a **specific range**                 | Extract/compare a particular portion of test data            | `Arrays.copyOfRange(array, from, to)` |
+| `Arrays.fill()`         | Fills all or part of an array with the **same value**               | Initialize/reset test-data arrays                            | `Arrays.fill(array, value)`           |
+| `Arrays.binarySearch()` | Searches for an element in a **sorted array** and returns its index | Quickly verify whether a value exists in sorted test data    | `Arrays.binarySearch(array, value)`   |
+
 
 **2. Useful to Know**
 

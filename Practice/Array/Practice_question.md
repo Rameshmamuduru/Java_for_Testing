@@ -36,10 +36,13 @@
 
 **2. Useful to Know**
 
-8. **`Arrays.deepToString()`** — print multidimensional arrays
-9. **`Arrays.deepEquals()`** — compare multidimensional arrays
-10. **`Arrays.deepHashCode()`** — hash code for multidimensional arrays
-11. **`Arrays.hashCode()`** — hash code for a one-dimensional array
-12. **`Arrays.mismatch()`** — find the first differing index between two arrays
-13. **`Arrays.compare()`** — lexicographically compare two arrays
-14. **`Arrays.compareUnsigned()`** — unsigned comparison of arrays
+| Method                  | Description                                        | Common Use Case                                       | General Structure                   |
+| ----------------------- | -------------------------------------------------- | ----------------------------------------------------- | ----------------------------------- |
+| `Arrays.deepToString()` | Converts multidimensional array to readable String | Display 2D/3D test data                               | `Arrays.deepToString(array)`        |
+| `Arrays.deepEquals()`   | Compares multidimensional arrays                   | Compare expected vs actual 2D data                    | `Arrays.deepEquals(array1, array2)` |
+| `Arrays.compare()`      | Compares two arrays lexicographically              | Compare array contents/order                          | `Arrays.compare(array1, array2)`    |
+| `Arrays.mismatch()`     | Finds the first index where two arrays differ      | Identify the first difference between expected/actual | `Arrays.mismatch(array1, array2)`   |
+| `Arrays.hashCode()`     | Generates a hash code based on array contents      | Hash-based comparison/storage                         | `Arrays.hashCode(array)`            |
+| `Arrays.asList()`       | Converts an array to a `List`                      | Working between arrays and collections                | `Arrays.asList(array)`              |
+| `Arrays.parallelSort()` | Sorts an array using parallel processing           | Large arrays                                          | `Arrays.parallelSort(array)`        |
+

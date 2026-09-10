@@ -107,3 +107,42 @@ Main class
        ↓
   BankAccount object
 ```
+**Creation of Methods in the Class**
+``` JAVA
+public class StringMethods {
+
+    static void printMessage() {
+        System.out.println("Hello Ramesh");
+    }
+
+    public static void main(String[] args) {
+
+        printMessage();
+    }
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

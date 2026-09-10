@@ -1,5 +1,3 @@
-Yes. That's better for your learning style. We'll keep **3–4 practice problems per level** so you can fully practice them before moving ahead.
-
 ### Level 1 — Basic String
 
 1. Find the length of `"AutomationTesting"`.
@@ -49,4 +47,3 @@ Yes. That's better for your learning style. We'll keep **3–4 practice problems
 3. Verify that a URL starts with `https://` and contains `/products/`.
 4. Check whether `"Error: Invalid username or password"` contains all three expected keywords.
 
-**We'll stay at one level at a time.** Start with **Level 1**, and once you're comfortable, we'll move to Level 2.

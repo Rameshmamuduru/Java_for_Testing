@@ -91,6 +91,9 @@ public class HelloWorld extends a implements Shape, add {
 
 }
 ```
+**Notes**
 
+- in interface all the variables by default **Static and Final**.
+- All the Abstract classes are **Public** by default.
 
 **2. Abstract class**

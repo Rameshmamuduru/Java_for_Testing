@@ -17,6 +17,11 @@ This is a process of hiding implementation details and showing only the essentia
 import java.awt.*; 
 import javax.swing.*; 
 
+class a {
+    void display() {
+        System.out.println("Hiiiii......");
+    }
+}
 
 interface Shape {
     int length=10;
@@ -34,13 +39,28 @@ interface Shape {
 
 }
 
-public class HelloWorld implements Shape {
+interface add {
+    int num1=10;
+    int num2=20;
+
+    void add();
+    void mul();
+}
+
+public class HelloWorld extends a implements Shape, add {
+
     public void circle() {
         System.out.println("this is a circle");
     }
 
     void Triangle() {
          System.out.println("this is a Triangle");
+    }
+    public void add() {
+        System.out.println(num1+num2);
+    }
+    public void mul() {
+        System.out.println(num1*num2);
     }
 
     public static void main (String[] args) {
@@ -54,6 +74,9 @@ public class HelloWorld implements Shape {
         h.Triangle();
         System.out.println(h.length*h.width);
         System.out.println(Shape.length*Shape.width);
+        h.add();
+        h.mul();
+        h.display();
 
         // Scenaroi 2
         Shape s = new HelloWorld();

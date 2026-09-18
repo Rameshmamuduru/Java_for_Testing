@@ -69,3 +69,4 @@ Java Basics                         ✅ DONE
           ├── Data-driven testing
           └── Framework development
 ```
+<img width="709" height="224" alt="image" src="https://github.com/user-attachments/assets/59edc8b4-b5e9-4794-a3d4-58af49cf30b6" />

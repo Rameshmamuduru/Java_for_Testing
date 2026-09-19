@@ -12,3 +12,49 @@
 | `Double`      | `double`              |
 | `Character`   | `char`                |
 | `Boolean`     | `boolean`             |
+
+**Data Conversion**
+
+Data conversion means changing a value from one data type to another data type.
+
+**Types of conversion**
+
+```
+                 DATA CONVERSION
+                       │
+          ┌────────────┴────────────┐
+          ↓                         ↓
+   Primitive Conversion       Reference/Object
+          │                    Conversion
+          │
+    ┌─────┴─────┐
+    ↓           ↓
+Widening     Narrowing
+```
+
+**AutoBoxing**
+
+Which means changing values from Object type to primitive Types
+
+```JAVA
+int a = 30;
+Integer b = a;
+```
+
+**UnBoxing**
+
+Which means changing values from Primitive type to Object type
+
+```JAVA
+Integer a=10;
+int b=a;
+```
+
+
+
+
+
+
+
+
+

@@ -74,7 +74,14 @@ f.eat();
 f.bark();
 ```
 
+**Rules to be followd for Type casting**
 
+Dog f = (Dog) t;
+a   b     c    d
+
+1. conversion is valid or not, c and d must have some relation ship.
+2. assignment is valid or not, c must be same or should be child of A (in assignment it should be same type or a should be parent types)
+3. the underlying object type of D must be either same or child of C
 
 
 

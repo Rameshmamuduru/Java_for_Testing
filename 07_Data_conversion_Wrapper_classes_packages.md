@@ -50,6 +50,24 @@ Integer a=10;
 int b=a;
 ```
 
+**Data Conversion**
+
+| #  | Conversion                     | Example            | Importance for SDET |
+| -- | ------------------------------ | ------------------ | ------------------- |
+| 1  | **Primitive → Primitive**      | `int → double`     | ⭐⭐⭐                 |
+| 2  | **String → Primitive**         | `"100" → int`      | ⭐⭐⭐⭐⭐               |
+| 3  | **String → Wrapper**           | `"100" → Integer`  | ⭐⭐⭐⭐                |
+| 4  | **Primitive → String**         | `100 → "100"`      | ⭐⭐⭐⭐⭐               |
+| 5  | **Primitive → Wrapper**        | `int → Integer`    | ⭐⭐⭐⭐                |
+| 6  | **Wrapper → String**           | `Integer → "100"`  | ⭐⭐⭐⭐                |
+| 7  | **Wrapper → Primitive**        | `Integer → int`    | ⭐⭐⭐⭐⭐               |
+| 8  | **Wrapper → Wrapper**          | `Integer → Double` | ⭐⭐⭐                 |
+| 9  | **Object → Object**            | `Dog → Animal`     | ⭐⭐⭐⭐                |
+| 10 | **Object → Primitive/Wrapper** | `Object → Integer` | ⭐⭐⭐                 |
+| 11 | **Primitive/Wrapper → Object** | `int → Object`     | ⭐⭐⭐                 |
+
+
+=================================================================================================
 **1. String → Primitive**
 ```
 String
@@ -162,10 +180,21 @@ public class HelloWorld {
 | `"true"`   | `boolean`        | `Boolean.parseBoolean()` |
 | `"A"`      | `char`           | `charAt(0)`              |
 
+=================================================================================================
 
+**2. String --> Wrapper Class**
 
+Instead of:
+```JAVA
+int number = Integer.parseInt("100");
+```
+```JAVA
+Integer number = Integer.valueOf("100");
+Float number = Float.valueOf("100")
+```
+=================================================================================================
 
-
+**3. Primitive --> String**
 
 
 

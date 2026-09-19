@@ -1,4 +1,4 @@
-**Types Casting**
+## **Types Casting**
 
 Is a process of converting one Data types to another.
 

@@ -106,3 +106,64 @@ public class HelloWorld {
     }
 }
 ```
+============================================================
+
+**finally**
+
+finally is a block that is executed after try and catch, whether an exception occurs or not.
+
+**Basic Structure**
+
+```JAVA
+try {
+    // risky code
+}
+catch (Exception e) {
+    // handle exception
+}
+finally {
+    // code that should execute afterward
+}
+```
+
+**Example**
+
+```JAVA
+try {
+    int result = 10 / 0;
+    System.out.println(result);
+}
+catch (ArithmeticException e) {
+    System.out.println("Cannot divide by zero");
+}
+finally {
+    System.out.println("Finally block executed");
+}
+```
+
+**finally is mainly used for cleanup — things that should happen whether the test/action passes or fails.**
+
+```JAVA
+WebDriver driver = new ChromeDriver();
+
+try {
+    driver.get("https://example.com");
+
+    // Test steps
+}
+catch (Exception e) {
+    System.out.println("Test failed: " + e.getMessage());
+}
+finally {
+    driver.quit();
+}
+```
+
+
+
+
+
+
+
+
+

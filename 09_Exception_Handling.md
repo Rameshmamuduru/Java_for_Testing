@@ -67,3 +67,22 @@ public class Test {
 
 an exception that is not checked by the compiler at compile time and occurs during program execution.
 
+**Example-1**
+```JAVA
+public class HelloWorld {
+    public static void main(String[] args) {
+
+        int num1=10;
+        int num2 =2;
+        
+        try {
+        int result = num1/num2;
+        System.out.println(result);
+        }
+        catch(ArithmeticException e){
+            System.out.println("Number can not be divided by Zero");
+        }
+
+    }
+}
+```

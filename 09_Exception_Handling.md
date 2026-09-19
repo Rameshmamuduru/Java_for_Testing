@@ -86,3 +86,23 @@ public class HelloWorld {
     }
 }
 ```
+**if we can not know that which exception does the programe/line gonna raise so we can use "(Exception e)"**
+
+```JAVA
+public class HelloWorld {
+    public static void main(String[] args) {
+
+        int num1=10;
+        int num2 =2;
+        
+        try {
+        int result = num1/num2;
+        System.out.println(result);
+        }
+        catch(Exception e){
+            System.out.println("Number can not be divided by Zero");
+        }
+
+    }
+}
+```

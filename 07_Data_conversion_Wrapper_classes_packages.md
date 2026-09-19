@@ -54,21 +54,64 @@ int b=a;
 
 | #  | Conversion                     | Example            | Importance for SDET |
 | -- | ------------------------------ | ------------------ | ------------------- |
-| 1  | **Primitive → Primitive**      | `int → double`     | ⭐⭐⭐                 |
-| 2  | **String → Primitive**         | `"100" → int`      | ⭐⭐⭐⭐⭐               |
-| 3  | **String → Wrapper**           | `"100" → Integer`  | ⭐⭐⭐⭐                |
-| 4  | **Primitive → String**         | `100 → "100"`      | ⭐⭐⭐⭐⭐               |
-| 5  | **Primitive → Wrapper**        | `int → Integer`    | ⭐⭐⭐⭐                |
-| 6  | **Wrapper → String**           | `Integer → "100"`  | ⭐⭐⭐⭐                |
-| 7  | **Wrapper → Primitive**        | `Integer → int`    | ⭐⭐⭐⭐⭐               |
-| 8  | **Wrapper → Wrapper**          | `Integer → Double` | ⭐⭐⭐                 |
-| 9  | **Object → Object**            | `Dog → Animal`     | ⭐⭐⭐⭐                |
-| 10 | **Object → Primitive/Wrapper** | `Object → Integer` | ⭐⭐⭐                 |
-| 11 | **Primitive/Wrapper → Object** | `int → Object`     | ⭐⭐⭐                 |
+| 1  | **Primitive → Primitive**      | `int → double`     | ⭐⭐⭐             |
+| 2  | **String → Primitive**         | `"100" → int`      | ⭐⭐⭐⭐⭐        |
+| 3  | **String → Wrapper**           | `"100" → Integer`  | ⭐⭐⭐⭐          |
+| 4  | **Primitive → String**         | `100 → "100"`      | ⭐⭐⭐⭐⭐        |
+| 5  | **Primitive → Wrapper**        | `int → Integer`    | ⭐⭐⭐⭐          |
+| 6  | **Wrapper → String**           | `Integer → "100"`  | ⭐⭐⭐⭐          |
+| 7  | **Wrapper → Primitive**        | `Integer → int`    | ⭐⭐⭐⭐⭐       |
+| 8  | **Wrapper → Wrapper**          | `Integer → Double` | ⭐⭐⭐            |
+| 9  | **Object → Object**            | `Dog → Animal`     | ⭐⭐⭐⭐         |
+| 10 | **Object → Primitive/Wrapper** | `Object → Integer` | ⭐⭐⭐            |
+| 11 | **Primitive/Wrapper → Object** | `int → Object`     | ⭐⭐⭐            |
 
 
 ============================================================================================
+
+**Primitive → Primitive**
+
+**1. Widening Conversion**
+
+Smaller compatible type → larger compatible type
+
+```
+byte → short → int → long → float → double
+```
+
+```JAVA
+int a = 100;
+double b = a;
+```
+
+**2. Narrowing Conversion**
+
+Larger type → smaller type.
+
+```JAVA
+double a = 100.5
+int b = (int) a;
+```
+
+```
+             Primitive → Primitive
+                     │
+             ┌───────┴───────┐
+             ↓               ↓
+         Widening         Narrowing
+             │               │
+       smaller → larger   larger → smaller
+             │               │
+        automatic        explicit cast
+
+```
+
+============================================================================================
+
 **1. String → Primitive**
+
+This can be done using by **Wrapper Class methods**
+
 ```
 String
   │
@@ -195,6 +238,31 @@ Float number = Float.valueOf("100")
 ============================================================================================
 
 **3. Primitive --> String**
+
+This can be achieved by 3 ways
+- 1. String.valueOf()
+- 2. Integer.toString()
+ 
+``` JAVA
+int num = 1023;
+String res = String.valueOf(num);
+System.out.println(res);
+```
+============================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

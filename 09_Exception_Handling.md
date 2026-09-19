@@ -159,6 +159,40 @@ finally {
 }
 ```
 
+**Throw Keyword**
+
+throw is used when you want to explicitly create and throw an exception yourself.
+
+```JAVA
+import java.util.Scanner;
+
+class calculator {
+
+    void sum(int n) {
+        if (n<18) {
+            throw new ArithmeticException("Age could not be under 18");
+        }
+        else {
+            System.out.println("you are older than 18");
+        }
+    }
+
+}
+
+public class HelloWorld {
+    public static void main(String[] args) {
+
+        calculator cal = new calculator();
+        try{
+        cal.sum(10);
+        }
+        catch(Exception e) {
+            System.out.println("Age should be older than 18");
+        }
+
+    }
+}
+```
 
 
 
